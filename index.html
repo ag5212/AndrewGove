@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello World!</h1>
-    <p>My GitHub website is officially live.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        body { background-color: #f4f7f9; color: #333; }
+        .container { margin-top: 50px; max-width: 800px; }
+        .header { text-align: center; margin-bottom: 50px; }
+        .project-card { background: white; padding: 20px; border-radius: 8px; border-left: 5px solid #007bff; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .tag { display: inline-block; background: #e1e8ed; padding: 2px 10px; border-radius: 4px; font-size: 1.2rem; margin-right: 5px; }
+        h4 { margin-bottom: 5px; color: #222; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Your Name</h1>
+        <p>Statistical Computing | Data Engineering | Distributed Systems</p>
+        <a class="button button-primary" href="#">Download Resume (PDF)</a>
+    </div>
+
+    <h3>Key Projects</h3>
+
+    <div class="project-card">
+        <h4>Predictive Modeling & Simulations</h4>
+        <p>Performed Monte Carlo simulations to evaluate model tradeoffs and used bootstrap methods for interval estimation.</p>
+        <span class="tag">R</span> <span class="tag">Statistics</span>
+    </div>
+
+    <div class="project-card">
+        <h4>Data Engineering & Automation</h4>
+        <p>Built Python pipelines for complex data cleaning, including fuzzy matching and address normalization logic.</p>
+        <span class="tag">Python</span> <span class="tag">ETL</span>
+    </div>
+
+    <div class="project-card">
+        <h4>Financial Data Analysis</h4>
+        <p>Analyzed large-scale corporate financial datasets to test for multivariate normality and statistical outliers.</p>
+        <span class="tag">Multivariate Analysis</span> <span class="tag">SQL</span>
+    </div>
+
+    <h3>Technical Skills</h3>
+    <ul>
+        <li><strong>Languages:</strong> R, Python, SQL</li>
+        <li><strong>Concepts:</strong> Probability Theory, Distributed Consistency, Regression Analysis</li>
+        <li><strong>Tools:</strong> Microsoft Fabric, GitHub, Hadoop Stack</li>
+    </ul>
+</div>
+
+</body>
 </html>
