@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Andrew Gove</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root {
+    --bg: #262420;
+    --card-bg: #322f29;
+    --accent: #a39a89;
+    --text: #e4e0d6;
+    --dim: #8f897b;
+    --border: #453f35;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .container { max-width: 640px; margin: 0 auto; padding: 60px 20px 100px; }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--dim);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .eyebrow {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin: 0 0 12px;
+    color: #fff;
+    letter-spacing: -1px;
+  }
+
+  .intro {
+    color: var(--dim);
+    margin-bottom: 40px;
+    font-size: 1.02rem;
+  }
+
+  .direct-links {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+
+  .icon-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .icon-link:hover { border-color: var(--accent); color: var(--accent); }
+
+  form {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 28px 30px;
+  }
+
+  .field { margin-bottom: 20px; }
+  .field:last-of-type { margin-bottom: 0; }
+
+  label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--dim);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  input, textarea {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  textarea { resize: vertical; min-height: 120px; }
+
+  .submit-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .submit-btn:hover { opacity: 0.9; }
+
+  .note {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: var(--dim);
+  }
+
+  .footer {
+    margin-top: 70px;
+    text-align: center;
+    color: var(--dim);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <a class="back-link" href="index.html">&larr; Back to portfolio</a>
+
+  <div class="eyebrow">GET IN TOUCH</div>
+  <h1>Contact</h1>
+  <p class="intro">Have a question, a project idea, or just want to say hi? Send a message below, or reach me directly.</p>
+
+  <div class="direct-links">
+    <a class="icon-link" href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a class="icon-link" href="https://www.linkedin.com/in/ag5212/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <a class="icon-link" href="mailto:ag5212@columbia.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+
+  <form action="https://formspree.io/f/yourFormID" method="POST">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Send Message</button>
+    <div class="note">This form is powered by Formspree — replace "yourFormID" in the form action with your own endpoint (free at formspree.io) for messages to actually reach you.</div>
+  </form>
+
+  <div class="footer">© 2026 Andrew Gove</div>
+
+</div>
+
+</body>
+</html>
